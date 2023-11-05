@@ -8,7 +8,6 @@ class Hostsctl < Formula
   depends_on "go" => :build
 
   def install
-
     ldflags = %W[
       -s -w
       -X main.VERSION=#{version}
